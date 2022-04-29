@@ -7,18 +7,47 @@
   </head>
 
   <body>
+    <div id="main">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
       <h1 id="title"> survey title </h1>
       <p id="description"> this is a short description </p>
       <form id="survey-form">
-        <label for="name-label">First name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email-label">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="number-label">Number:</label>
-        <input type="number" id="number" name="number" min="0" max="9999999999" required>
-      </form>
+        <label for="name" id="name-label">First name:</label>
+        <input placeholder="Your name" type="text" id="name" name="name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input placeholder="Your email" type="email" id="email" name="email" required>
+        <label for="number" id="number-label">Number:</label>
+        <input placeholder="Your number" type="number" id="number" name="number" min="0" max="9999999999" required>
+        <label for="cars">Choose your car:</label>
+        <select id="dropdown" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+</select>
+<div>
+<input type="radio" id="huey" name="drone" value="huey"
+       checked>
+<label for="huey">Huey</label>
+</div>
+<div>
+<input type="radio" id="dewey" name="drone" value="dewey">
+<label for="dewey">Dewey</label>
+</div>
 
+<div>
+<input type="radio" id="louie" name="drone" value="louie">
+<label for="louie">Louie</label>
+
+<label><input type="checkbox" id="cbox1" value="first_checkbox"> first checkbox</label><br>
+
+<input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">second checkbox</label>
+<textarea> </textarea>
+  <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </form>
+</div>
     <!--
 
     Hello Camper!
